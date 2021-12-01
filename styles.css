@@ -21,8 +21,10 @@ body {
 .nft-container {
     background-color: var(--card-background);
     border-radius: 15px;
-    padding: 1.5rem;
-    margin: 3.8rem 1.5rem;
+    padding: 1.33rem;
+    margin: 3.44rem 1.33rem;
+    max-width: 350px;
+    min-width: 327px;
 }
 .image-overlay-container {
     position: relative;
@@ -61,4 +63,86 @@ body {
 }
 .image-overlay-container img {
     border-radius: 8px;
+}
+.nft-container h1 {
+    font-family: var(--outfit);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.75rem;
+    margin-top: 1.33rem;
+    margin-bottom: .66rem;
+    transition: color 0.3s ease;
+}
+.nft-container h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.nft-container p {
+    font-family: var(--outfit);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.44rem;
+    color: var(--softBlue);
+    margin-bottom: 13px;
+}
+.nft-container .nft-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nft-info .ethereum {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: var(--cyan);
+    margin: 0;
+}
+.ethereum svg {
+    margin-right: 6.5px;
+}
+.nft-info .days-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--softBlue);
+    margin: 0;
+}
+.days-left svg {
+    margin-right: 6.5px;
+}
+
+.creator-credit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.creator-credit img {
+    width: 33px;
+    border: solid 1px var(--white);
+    border-radius: 50%;
+}
+.creator-credit p {
+    margin-bottom: 0;
+    margin-left: 16px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.creator-credit .creation {
+    color: var(--softBlue);
+}
+.creator-credit .creator {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+.creator-credit .creator:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+.rectangle {
+    margin-top: 25px;
+    margin-bottom: 16px;
 }
