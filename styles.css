@@ -1,0 +1,64 @@
+/* CSS VARIABLES */
+:root {
+    /* COLORS */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --body-background: hsl(217, 54%, 11%);
+    --card-background: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Font */
+    --outfit: 'Outift', sans-serif;
+}
+body {
+    background-color: var(--body-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nft-container {
+    background-color: var(--card-background);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 3.8rem 1.5rem;
+}
+.image-overlay-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-overlay-container::before, .image-overlay-container::after {
+    background-color: var(--cyan);
+    position: absolute;
+    inset: 0;
+    content: '';
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.image-overlay-container .overlay-icon {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.image-overlay-container:hover::before, .image-overlay-container:hover::after {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.image-overlay-container:hover .overlay-icon {
+    opacity: 1;
+    cursor: pointer;
+}
+.image-overlay-container img {
+    border-radius: 8px;
+}
