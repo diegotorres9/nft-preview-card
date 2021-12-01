@@ -80,7 +80,7 @@ body {
 }
 .nft-container p {
     font-family: var(--outfit);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.44rem;
     color: var(--softBlue);
@@ -99,6 +99,9 @@ body {
     color: var(--cyan);
     margin: 0;
 }
+.ethereum p {
+    font-size: 15px;
+}
 .ethereum svg {
     margin-right: 6.5px;
 }
@@ -110,6 +113,9 @@ body {
     font-weight: 400;
     color: var(--softBlue);
     margin: 0;
+}
+.days-left p {
+    font-size: 15px;
 }
 .days-left svg {
     margin-right: 6.5px;
@@ -145,4 +151,26 @@ body {
 .rectangle {
     margin-top: 25px;
     margin-bottom: 16px;
+}
+.attribution {
+    color: var(--white);
+    font-family: var(--outfit);
+    font-size: 12px;
+}
+.attribution a {
+    color: var(--softBlue);
+}
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nft-container {
+        margin: 9rem 30rem;
+    }
+    .nft-container p {
+        font-size: 18px;
+    }
 }
